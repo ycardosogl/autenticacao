@@ -26,6 +26,12 @@ function Cadastro(){
       const response = await axios.post('http://localhost:5001/users', formData);
       console.log(response.data);
       alert('inserido!');
+      setFormData({ // definir o estado inicial do formData
+        email: '',
+        nome: '',
+        senha: '',
+        nrsec: ''
+      });
     } catch (error) {
       console.error(error);
     }
@@ -35,7 +41,7 @@ function Cadastro(){
     return(
         <div class="container">
         <h1>Formulário de Cadastro</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div class="form-group">
             <label for="name">Nome:</label>
             <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleChange} required/>
