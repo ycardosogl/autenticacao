@@ -196,14 +196,15 @@ h2 {
 
 /*Página de cadastro*/
 body {
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     font-family: Arial, sans-serif;
   }
 
   h1 {
-    color: #ff6ad5;
+    color: #fba9db;
     text-align: center;
+    
   }
 
   .container {
@@ -219,7 +220,7 @@ body {
   .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #ff6ad5;
+    color: #fba9db;
     font-weight: bold;
   }
 
@@ -228,7 +229,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #8a2be2;
+    background-color: #fff;
     color: #fff;
   }
 
@@ -241,7 +242,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #ff6ad5;
+    background-color:#810652;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
